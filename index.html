@@ -99,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
@@ -107,11 +107,27 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
         </div>
     </section>
+<!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content" style="background-color: rgb(253, 236, 213);">
+        <div class="modal-header">
+          <h5  class="modal-title text-warning" id="exampleModalLabel">Congratulation's</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            You have confirmed your ticket.Thank's sir.Have a nice trip,,,,
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Another Ticket</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!--Thank You-->
     <script>
-        
-        // let firstClassIncrement = document.getElementById("first-class-increase")
         function increaseAndDecrease(classes,isIncrease){
             let ClassCount = document.getElementById(classes + '-count');
             let caseNewCount = parseInt(ClassCount.value)
@@ -144,6 +160,7 @@
             return count
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 
 </html>
